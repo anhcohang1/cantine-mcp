@@ -20,9 +20,16 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+
+    <!-- Use MCP core with its Jackson 2 binding. Spring Boot 3.5 is Jackson 2 based. -->
     <dependency>
       <groupId>io.modelcontextprotocol.sdk</groupId>
-      <artifactId>mcp</artifactId>
+      <artifactId>mcp-core</artifactId>
+      <version>${mcp.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.modelcontextprotocol.sdk</groupId>
+      <artifactId>mcp-json-jackson2</artifactId>
       <version>${mcp.version}</version>
     </dependency>
   </dependencies>
